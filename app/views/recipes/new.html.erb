@@ -36,8 +36,11 @@
           </div>
 
           <div class="field">
-            <%= f.label :image, "写真", class: "label" %>
-            <%= f.attachment_field :image, class: "input" %>
+            <%= f.label :image, "写真" %>
+
+            <div class="input">
+              <%= f.attachment_field :image_id %>
+            </div>
           </div>
 
           <%= f.submit '投稿', class: "button is-success" %>
